@@ -37,7 +37,10 @@ public:
 	void Pop_Back() {
 		v_size--;
 	}
-
+	~myVector() {
+		delete[]ptr;
+		ptr = NULL;
+	}
 };
 
 
