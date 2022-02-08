@@ -26,7 +26,7 @@ template <class T>
 class FList 
 {
 public:
-  FList()=default;
+  FList() = default;
   ~FList();
 public:
  //insertions
