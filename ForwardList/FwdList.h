@@ -6,7 +6,6 @@
 
 namespace opt
 {
-
 template <class T>
 class FwdList 
 {
@@ -47,7 +46,6 @@ size_t size{};
 };
 
 #include "FwdList.hpp"
-
 }  //namespace opt
 
 #endif // !__FWDLIST__
