@@ -14,7 +14,7 @@ public:
 FwdList()=default;
 ~FwdList() { clear(); }
 FwdList& operator=(const FwdList&);
-
+  
 public:
 //modifiers
 void push_front(const T& elem) noexcept;
@@ -31,7 +31,6 @@ void print() const;
 bool is_empty() const;
 
 protected:
-
 template <typename E>
 struct Node
 {
@@ -43,10 +42,8 @@ explicit Node(const E& elems,Node* ptr): data{elems}, next{ptr} {}
 };
 
 private:
-
 Node<T>* head{};
 size_t size{};
-
 };
 
 #include "FwdList.hpp"
