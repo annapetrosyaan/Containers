@@ -49,7 +49,11 @@ bool Bitset<N>::none() const noexcept
 {
    for(int i=0; i < b_size; ++i)
    {
-       if(b_array[i] != 0){ return false; }
+       if(b_array[i] != 0)
+       {
+           return false;
+           break;
+       }
    }
   return true; 
 }
